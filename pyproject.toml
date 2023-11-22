@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "remove-podcast-ads-with-ai"
+version = "0.1.0"
+description = ""
+authors = ["Sam Korn <korn94sam@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4"
+feedparser = "^6.0.10"
+requests = "^2.31.0"
+pyAudioAnalysis = {path = "../pyAudioAnalysis"}
+pydub = "^0.25.1"
+whispercpp = {git = "https://github.com/kornpow/whispercpp.git", rev = "main"}
+ffmpeg-python = "^0.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+black = "^23.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
